@@ -21,7 +21,7 @@ $fourth-linear: linear-gradient(#92D3A0, #B7DF62);
 body {
   font-family: 'Assistant', sans-serif;
   font-weight: 300;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   margin: 0 auto;
 }
 
