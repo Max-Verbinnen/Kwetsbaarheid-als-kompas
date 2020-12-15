@@ -1,10 +1,13 @@
 header {
+  background: #FDFDF1;
+}
+
+.header-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 5rem auto 0 auto;
   width: 85%;
-  background: #FDFDF1;
 }
 
 .header-info {
@@ -60,13 +63,13 @@ header {
 // Media Queries
 
 @media screen and (min-width: 1479px) {
-  header {
+  .header-section {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 1150px) {
-  header {
+  .header-section {
     flex-direction: column;
     text-align: center;
   }
