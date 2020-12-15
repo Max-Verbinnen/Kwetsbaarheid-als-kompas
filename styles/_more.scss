@@ -43,3 +43,17 @@
     margin-bottom: 5rem;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .podcast-container, .first-book-container {
+    flex-direction: column;
+
+    img {
+      margin: 0;
+      margin-bottom: 2rem;
+    }
+    p {
+      margin: 1.2rem 0;
+    }
+  }
+}
