@@ -1,20 +1,27 @@
 // Button animation (ripple effect)
 
-const buttons = document.querySelectorAll('a');
+const links = document.querySelectorAll('a');
+links.forEach(link => {
+  let re = /[a-zA-Z]+\-cta/;
+  if (re.test(link.classList[0])) {
+    execRipple(link);
+  }
+})
 
-buttons.forEach(btn => {
-  btn.addEventListener('mouseover', (e) => {
+function execRipple(elem) {
+  elem.addEventListener('mouseover', (e) => {
     let x = e.clientX - e.target.offsetLeft;
-    let y = e.clientY - e.target.offsetTop;
+    const {top} = e.target.getBoundingClientRect();
+    let y = e.clientY - top;
   
     let ripples = document.createElement('span');
     ripples.style.left = x + 'px';
     ripples.style.top = y + 'px';
   
-    btn.appendChild(ripples);
+    elem.appendChild(ripples);
   
     setTimeout(() => {
       ripples.remove()
     }, 600);
   });
-});
+}
