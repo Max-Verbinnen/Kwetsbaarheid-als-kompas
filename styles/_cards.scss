@@ -1,0 +1,83 @@
+.cards-wrapper {
+  margin: 12rem auto;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -1rem;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 18.3125rem;
+  height: 37.875rem;
+  padding: 2rem;
+  margin: 1rem;
+
+  position: relative;
+  background: white;
+  background-clip: padding-box;
+  border: solid 5px transparent;
+  border-radius: 1em;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0px; right: 0; bottom: 0; left: 0px;
+    z-index: -1;
+    margin: -5px;
+    border-radius: inherit; 
+    background: $first-linear;
+    animation: animate 20s linear infinite;
+  }
+}
+
+
+.card-two {
+  &:before {
+    background: $second-linear;
+  }
+}
+
+.card-three {
+  &:before {
+    background: $fourth-linear;
+  }
+}
+
+.card-four {
+  &:before {
+    background: $third-linear;
+  }
+}
+
+.card-img {
+  object-fit: cover;
+}
+.card-info {
+  text-align: center;
+}
+
+// Media Queries
+
+@media screen and (min-width: 1479px) {
+  .cards-section {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card-img {
+    width: 80%;
+  }
+}

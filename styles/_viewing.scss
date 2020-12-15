@@ -1,0 +1,39 @@
+.viewing-section {
+  display: flex;
+  justify-content: space-evenly;
+  background: $light-blue;
+  padding: 4rem 0;
+  width: 100%;
+  margin-bottom: 10rem;
+}
+
+.viewing-info {
+  max-width: 37.5rem;
+  margin: auto 0;
+
+  p {
+    font-weight: 300;
+    margin: 1.5rem 0;
+    max-width: 26.125rem;
+  }
+}
+
+
+// Media Queries
+
+@media screen and (max-width: 1068px) {
+  .viewing-section {
+    flex-direction: column;
+  }
+  .book-cover {
+    margin: 0 auto;
+  }
+  .viewing-info {
+    margin: 2rem auto 0 auto;
+    text-align: center;
+
+    p {
+      margin: 1.5rem auto;
+    }
+  }
+}

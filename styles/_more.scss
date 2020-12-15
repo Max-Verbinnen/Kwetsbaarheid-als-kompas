@@ -1,0 +1,44 @@
+.more-section {
+  margin-bottom: 8rem;
+  background: $light-green;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.podcast-container, .first-book-container {
+  display: flex;
+
+  img {
+    width: 10rem;
+    margin-right: 4rem;
+  }
+  a {
+    background: $secondary-green;
+  }
+}
+
+.podcast-info, .first-book-info {
+  max-width: 14.6875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wave {
+  width: 100%;
+  transform: translateY(-8rem);
+}
+
+
+// Media Queries
+
+@media screen and (max-width: 1150px) {
+  .more-section {
+    flex-direction: column;
+  }
+  .podcast-container {
+    margin-bottom: 5rem;
+  }
+}

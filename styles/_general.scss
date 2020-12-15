@@ -1,0 +1,104 @@
+$primary-blue: #7693D0;
+$light-blue: rgba(71, 110, 192, 0.2);
+$secondary-green: #92D3A0;
+$light-green: #D1F8DA;
+$first-linear: linear-gradient(#B7DF62, #92D3A0);
+$second-linear: linear-gradient(#8DA8DF, #AB7BE8);
+$third-linear: linear-gradient(#EC7A30, #F3BE36);
+$fourth-linear: linear-gradient(#92D3A0, #B7DF62);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&family=Quicksand&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+img {
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.main-cta, .viewing-cta, .podcast-cta, .first-book-cta {
+  background: $primary-blue;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  display: inline-block;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 0.65rem 1.5rem;
+  cursor: pointer;
+  font-family: 'Assistant', sans-serif;
+  text-align: center;
+  font-size: 1.25rem;
+  // font-weight: 400;
+
+  span {
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: ripple 0.6s linear infinite;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.3;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+
+
+// Media Queries
+
+@media screen and (max-width: 750px) {
+  * {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  * {
+    font-size: 60%;
+  }
+}
