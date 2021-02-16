@@ -41,7 +41,7 @@ img {
   -ms-user-select: none;
 }
 
-.main-cta, .viewing-cta, .podcast-cta, .first-book-cta {
+.main-cta, .viewing-cta, .podcast-cta, .first-book-cta, .zoom-cta {
   background: #7693D0;
   overflow: hidden;
   text-decoration: none;
@@ -58,7 +58,7 @@ img {
   font-size: 1.25rem;
 }
 
-.main-cta span, .viewing-cta span, .podcast-cta span, .first-book-cta span {
+.main-cta span, .viewing-cta span, .podcast-cta span, .first-book-cta span, .zoom-cta span {
   position: absolute;
   background: #fff;
   -webkit-transform: translate(-50%, -50%);
@@ -335,15 +335,27 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: rgba(71, 110, 192, 0.2);
   padding: 5rem 0;
   width: 100%;
   margin-bottom: 10rem;
 }
 
+.zoom-info {
+  max-width: 37.5rem;
+}
+
+.zoom-info p {
+  font-weight: 300;
+  margin: 1.5rem 0;
+  max-width: 26.125rem;
+}
+
 .viewing-info {
   max-width: 37.5rem;
-  margin: auto 0;
 }
 
 .viewing-info p {
@@ -362,12 +374,15 @@ header {
   .book-cover {
     margin: 0 auto;
   }
-  .viewing-info {
+  .viewing-info, .zoom-info {
     margin: 3rem auto 0 auto;
     text-align: center;
   }
-  .viewing-info p {
+  .viewing-info p, .zoom-info p {
     margin: 1.5rem auto;
+  }
+  .zoom-info {
+    margin: 0 auto 3rem auto;
   }
 }
 
@@ -458,10 +473,11 @@ header {
 }
 
 .podcast-container img, .first-book-container img {
-  width: 10rem;
+  width: 12rem;
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 4rem;
+  border-radius: 0.5rem;
 }
 
 .podcast-container a, .first-book-container a {
@@ -512,9 +528,9 @@ header {
             flex-direction: column;
   }
   .podcast-container img, .first-book-container img {
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 2rem;
-    width: 50%;
+    width: 15rem;
   }
   .podcast-container p, .first-book-container p {
     margin: 1.2rem 0;

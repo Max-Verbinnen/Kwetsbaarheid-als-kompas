@@ -1,15 +1,25 @@
 .viewing-section {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   background: $light-blue;
   padding: 5rem 0;
   width: 100%;
   margin-bottom: 10rem;
 }
 
+.zoom-info {
+  max-width: 37.5rem;
+
+  p {
+    font-weight: 300;
+    margin: 1.5rem 0;
+    max-width: 26.125rem;
+  }
+}
+
 .viewing-info {
   max-width: 37.5rem;
-  margin: auto 0;
 
   p {
     font-weight: 300;
@@ -28,13 +38,16 @@
   .book-cover {
     margin: 0 auto;
   }
-  .viewing-info {
+  .viewing-info, .zoom-info {
     margin: 3rem auto 0 auto;
     text-align: center;
 
     p {
       margin: 1.5rem auto;
     }
+  }
+  .zoom-info {
+    margin: 0 auto 3rem auto;
   }
 }
 

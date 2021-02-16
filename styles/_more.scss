@@ -11,9 +11,10 @@
   display: flex;
 
   img {
-    width: 10rem;
+    width: 12rem;
     object-fit: cover;
     margin-right: 4rem;
+    border-radius: 0.5rem;
   }
   a {
     background: $secondary-green;
@@ -52,9 +53,9 @@
     flex-direction: column;
 
     img {
-      margin: 0;
+      margin: 0 auto;
       margin-bottom: 2rem;
-      width: 50%;
+      width: 15rem;
     }
     p {
       margin: 1.2rem 0;
