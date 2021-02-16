@@ -520,7 +520,7 @@ header {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .podcast-container, .first-book-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
