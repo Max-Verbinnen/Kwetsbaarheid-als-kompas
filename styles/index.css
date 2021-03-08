@@ -354,6 +354,11 @@ header {
   max-width: 26.125rem;
 }
 
+.book-cover img {
+  width: 10rem;
+  margin-right: 2rem;
+}
+
 .viewing-info {
   max-width: 37.5rem;
 }
@@ -372,7 +377,10 @@ header {
             flex-direction: column;
   }
   .book-cover {
-    margin: 0 auto;
+    margin: 1rem auto;
+  }
+  .book-cover img {
+    margin: 0;
   }
   .viewing-info, .zoom-info {
     margin: 3rem auto 0 auto;
@@ -383,12 +391,6 @@ header {
   }
   .zoom-info {
     margin: 0 auto 3rem auto;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .book-cover img {
-    width: 15rem;
   }
 }
 
