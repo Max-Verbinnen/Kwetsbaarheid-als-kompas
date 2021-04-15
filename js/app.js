@@ -25,3 +25,20 @@ function execRipple(elem) {
     }, 600);
   });
 }
+
+// Swiper (testimonials)
+
+const swiper = new Swiper('.swiper-container', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    // depth: 0,
+    modifier: 1,
+    slideShadows: false,
+  },
+  loop: true
+});
