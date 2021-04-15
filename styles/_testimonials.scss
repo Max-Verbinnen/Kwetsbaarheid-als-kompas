@@ -24,6 +24,7 @@
   max-width: 350px;
   min-height: 350px;
   margin: 0 20px;
+  border-radius: 0.5rem;
 }
 
 .swiper-container-3d .swiper-slide-shadow-left, .swiper-container-3d .swiper-slide-shadow-right {
@@ -41,6 +42,14 @@
   text-align: center;
   background: #eee;
   border-radius: 0.5rem;
+}
+
+.swiper-slide:nth-child(even) {
+  border-bottom: 5px solid $primary-blue;
+}
+
+.swiper-slide:nth-child(odd) {
+  border-bottom: 5px solid $secondary-green;
 }
 
 .testimonials-card .content {
@@ -65,4 +74,22 @@
   color: $primary-blue;
   font-weight: 600;
   font-size: 17px;
+}
+
+// Media queries
+@media screen and (max-width: 450px) {
+  .swiper-slide {
+    max-width: 230px;
+  }
+  .testimonials-card .content p {
+    font-size: 13px;
+    line-height: initial;
+  }
+  .details h2 a {
+    font-size: 15px;
+  }
+  .details h3 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
 }
