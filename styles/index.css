@@ -525,19 +525,16 @@ header {
   line-height: 24px;
 }
 
-.details h2 {
-  font-size: 1.3rem;
-}
-
 .details h2 a {
   color: initial;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .details h3 {
   color: #7693D0;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .more-section {
