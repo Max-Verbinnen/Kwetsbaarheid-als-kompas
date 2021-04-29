@@ -348,15 +348,12 @@ header {
   max-width: 37.5rem;
 }
 
-.zoom-info p {
-  font-weight: 300;
-  margin: 1.5rem 0;
-  max-width: 26.125rem;
+.zoom-info h2 {
+  margin-bottom: 1.5rem;
 }
 
 .book-cover img {
   width: 10rem;
-  margin-right: 2rem;
 }
 
 .viewing-info {
